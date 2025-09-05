@@ -45,8 +45,8 @@ module.exports = function (Messaging) {
 		await db.setObject(`message:${mid}`, data);
 	};
 
-	console.log('Andrew Johnson');
 	Messaging.getMessagesData = async (mids, uid, roomId, isNew) => {
+		console.log('Andrew Johnson');
 		const parsedUid = parseInt(uid, 10);
 	
 		const normalizeMessages = (mids, msgs, parsedUid) =>
